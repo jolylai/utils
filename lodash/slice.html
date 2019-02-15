@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>slice</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/notebook-js/assets/css/0.styles.1eb9b344.css" as="style"><link rel="preload" href="/notebook-js/assets/js/app.216c0bc9.js" as="script"><link rel="preload" href="/notebook-js/assets/js/17.fe1b65c3.js" as="script"><link rel="prefetch" href="/notebook-js/assets/js/10.250dee4e.js"><link rel="prefetch" href="/notebook-js/assets/js/11.29e5dc21.js"><link rel="prefetch" href="/notebook-js/assets/js/12.a4d3bf93.js"><link rel="prefetch" href="/notebook-js/assets/js/13.7a82f5e4.js"><link rel="prefetch" href="/notebook-js/assets/js/14.fa369142.js"><link rel="prefetch" href="/notebook-js/assets/js/15.087e310a.js"><link rel="prefetch" href="/notebook-js/assets/js/16.0456e5e9.js"><link rel="prefetch" href="/notebook-js/assets/js/18.a2efb9c1.js"><link rel="prefetch" href="/notebook-js/assets/js/19.df22d470.js"><link rel="prefetch" href="/notebook-js/assets/js/2.7974f97d.js"><link rel="prefetch" href="/notebook-js/assets/js/3.541b068d.js"><link rel="prefetch" href="/notebook-js/assets/js/4.760f0cff.js"><link rel="prefetch" href="/notebook-js/assets/js/5.be438cc5.js"><link rel="prefetch" href="/notebook-js/assets/js/6.493ac508.js"><link rel="prefetch" href="/notebook-js/assets/js/7.328a04a8.js"><link rel="prefetch" href="/notebook-js/assets/js/8.8795c4ec.js"><link rel="prefetch" href="/notebook-js/assets/js/9.75dbe2f2.js">
+    <link rel="stylesheet" href="/notebook-js/assets/css/0.styles.1eb9b344.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/notebook-js/" class="home-link router-link-active"></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/notebook-js/lodash/" class="nav-link router-link-active">Lodash</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/notebook-js/lodash/" class="nav-link router-link-active">Lodash</a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first"><p class="sidebar-heading"><span>Lodash</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/notebook-js/lodash/" class="sidebar-link">Lodash</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>internal</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/notebook-js/lodash/baseWhile.html" class="sidebar-link">baseWhile</a></li><li><a href="/notebook-js/lodash/isStrictComparable.html" class="sidebar-link">isStrictComparable</a></li><li><a href="/notebook-js/lodash/getMatchData.html" class="sidebar-link">getMatchData</a></li><li><a href="/notebook-js/lodash/stack.html" class="sidebar-link">stack</a></li><li><a href="/notebook-js/lodash/baseIsEqual.html" class="sidebar-link">baseIsEqual</a></li><li><a href="/notebook-js/lodash/baseMatches.html" class="sidebar-link">baseMatches</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>Array</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/notebook-js/lodash/drop.html" class="sidebar-link">drop</a></li><li><a href="/notebook-js/lodash/dropRight.html" class="sidebar-link">dropRight</a></li><li><a href="/notebook-js/lodash/dropRightWhile.html" class="sidebar-link">dropRightWhile</a></li><li><a href="/notebook-js/lodash/dropWhile.html" class="sidebar-link">dropWhile</a></li><li><a href="/notebook-js/lodash/slice.html" class="active sidebar-link">slice</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Lang</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/notebook-js/lodash/isObject.html" class="sidebar-link">isObject</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>Util</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/notebook-js/lodash/matches.html" class="sidebar-link">matches</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="slice"><a href="#slice" aria-hidden="true" class="header-anchor">#</a> slice</h1> <p>计算 start 和 length，创建新的结果数组并返回</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">slice</span><span class="token punctuation">(</span>array<span class="token punctuation">,</span> start<span class="token punctuation">,</span> end<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> length <span class="token operator">=</span> array <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token punctuation">:</span> array<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token comment">// undefined == null  -&gt; true</span>
+  start <span class="token operator">=</span> start <span class="token operator">==</span> <span class="token keyword">null</span> <span class="token operator">?</span> <span class="token number">0</span> <span class="token punctuation">:</span> start<span class="token punctuation">;</span>
+  end <span class="token operator">=</span> end <span class="token operator">===</span> undefined <span class="token operator">?</span> length <span class="token punctuation">:</span> end<span class="token punctuation">;</span>
+
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>start <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    start <span class="token operator">=</span> <span class="token operator">-</span>start <span class="token operator">&gt;</span> length <span class="token operator">?</span> <span class="token number">0</span> <span class="token punctuation">:</span> length <span class="token operator">+</span> start<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// end &gt;= 0</span>
+  end <span class="token operator">=</span> end <span class="token operator">&gt;</span> length <span class="token operator">?</span> length <span class="token punctuation">:</span> end<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>end <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    end <span class="token operator">+=</span> length<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// ???</span>
+  length <span class="token operator">=</span> start <span class="token operator">&gt;</span> end <span class="token operator">?</span> <span class="token number">0</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>end <span class="token operator">-</span> start<span class="token punctuation">)</span> <span class="token operator">&gt;&gt;&gt;</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  start <span class="token operator">&gt;&gt;&gt;=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 创建新数组</span>
+  <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> result <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>length<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token operator">++</span>index <span class="token operator">&lt;</span> length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    result<span class="token punctuation">[</span>index<span class="token punctuation">]</span> <span class="token operator">=</span> array<span class="token punctuation">[</span>index <span class="token operator">+</span> start<span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">TIP</p> <ul><li><code>undefined == null</code>-&gt; true</li> <li>函数中的如果没传入值的话则为 <code>undefined</code></li></ul></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/notebook-js/lodash/dropWhile.html" class="prev">
+          dropWhile
+        </a></span> <span class="next"><a href="/notebook-js/lodash/isObject.html">
+          isObject
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/notebook-js/assets/js/app.216c0bc9.js" defer></script><script src="/notebook-js/assets/js/17.fe1b65c3.js" defer></script>
+  </body>
+</html>
