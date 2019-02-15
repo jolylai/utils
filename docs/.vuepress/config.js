@@ -1,4 +1,5 @@
 module.exports = {
+  base: "/notebook-js/",
   themeConfig: {
     nav: [
       {
