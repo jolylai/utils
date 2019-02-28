@@ -4,6 +4,7 @@ module.exports = {
   base: "/notebook-js/",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
+    repo: "jolylai/notebook-js",
     nav: [
       {
         text: "Lodash",
