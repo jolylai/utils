@@ -1,6 +1,6 @@
 # Guide
 
-<img :src="$withBase('/guide.jpg')" alt="foo" >
+<img :src="$withBase('/array.png')" alt="array" >
 
 ### Learning
 
