@@ -2,11 +2,13 @@ language: node_js
 node_js: stable
 branches:
   only:
-  - master
+    - master
+addons:
+  ssh_known_hosts: 106.12.140.131
 install:
-- npm install
+  - npm install
 script:
-- npm run docs:build
+  - npm run docs:build
 deploy:
   provider: pages
   skip-cleanup: true
@@ -16,9 +18,9 @@ deploy:
   on:
     branch: master
 before_install:
-- openssl aes-256-cbc -K $encrypted_2a01126f8b17_key -iv $encrypted_2a01126f8b17_iv
-  -in id_rsa.enc -out ~\/.ssh/id_rsa -d
-- chmod 600 ~/.ssh/id_rsa
-- echo -e "Host 106.12.140.131\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - openssl aes-256-cbc -K $encrypted_2a01126f8b17_key -iv $encrypted_2a01126f8b17_iv
+    -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - chmod 600 ~/.ssh/id_rsa
+  - echo -e "Host 106.12.140.131\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 after_success:
-- echo '# Hello VuePress!' > README.md
+  - echo '# Hello VuePress!' > README.md
