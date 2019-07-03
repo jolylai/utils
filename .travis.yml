@@ -22,5 +22,7 @@ before_install:
     -in id_rsa.enc -out ~/.ssh/id_rsa -d
   - chmod 600 ~/.ssh/id_rsa
   - echo -e "Host 106.12.140.131\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+  - yarn global add now
 after_success:
   - scp -o stricthostkeychecking=no -r docs/.vuepress/dist root@106.12.140.131:/root
+  - cd docs/.vuepress/dist && now -t $NOW_TOKEN alias foo-dev
