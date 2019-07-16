@@ -15,8 +15,5 @@ footer: Copyright © 2019-present Jolylai
 
 # Feature
 
-- Lodash
-- 你不知道的 JavaScript
-- React
-- PomeloUI
-- Article
+- Array
+- Object
