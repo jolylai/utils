@@ -1,7 +1,7 @@
 module.exports = {
-  title: "NoteBook Lodash",
+  title: "Lodash",
   description: "🚀 JavaScript 学习笔记",
-  base: "/notebook-js/",
+  base: "/notebook-lodash/",
   head: [["link", { rel: "icon", href: "/favicon.ico" }]],
   themeConfig: {
     repo: "jolylai/notebook-js",
