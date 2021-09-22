@@ -1,22 +1,20 @@
 ---
 home: true
-# heroImage: /logo.png
+# heroImage: /hero.png
 # heroAlt: Logo image
-heroText: Vue
-tagline: use vue hooks like
+heroText: Lodash
+tagline: Lodash 是一个一致性、模块化、高性能的 JavaScript 实用工具库。
 actionText: Get Started
-actionLink: /guide/
+actionLink: /function/after
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue + webpack, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VitePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
+  - title: Array
+    details: Array utils
+  - title: Collection
+    details: Collection utils
+  - title: Function
+    details: Function utils
 footer: MIT Licensed | Copyright © 2021-present
 ---
-
-# Lodash
 
 ## Function
 
@@ -24,7 +22,4 @@ footer: MIT Licensed | Copyright © 2021-present
 
 # Reference
 
-- [lazyLoad](https://zhuanlan.zhihu.com/p/55311726)
-- [瀑布流](https://zhuanlan.zhihu.com/p/55575862)
-- [跨域](https://zhuanlan.zhihu.com/p/56718905)
 - [You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)

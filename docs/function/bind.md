@@ -41,3 +41,18 @@ console.log(obj.x, obj.y); // 5,7
 ```
 
 较于 `_.bind()` 只需要调用函数的 bind 方法只需要传入 this 指向的对象和调用函数所需的参数
+
+## setTimeout
+
+```js
+let user = {
+  name: "Jake",
+  say: function () {
+    console.log("Hello " + this.name + "!");
+  },
+};
+
+user.say(); // Hello, Jake!
+setTimeout(user.say, 100); // Hello, undefined!
+setTimeout(user.say.bind(user), 1000); // Hello, Jake!
+```
