@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "vitepress dev docs",
+    "build": "tsc",
     "docs:build": "vitepress build docs",
     "test": "jest"
   },

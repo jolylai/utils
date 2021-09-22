@@ -5,11 +5,14 @@
  * @return The function to restricted
  */
 function before(n: number = 0, func: () => any): () => any {
+  let result: any;
+
   return function () {
-    if (--n < 1) {
+    if (n-- > 0) {
       // @ts-ignore
-      return func.apply(this, arguments);
+      result = func.apply(this, arguments);
     }
+    return result;
   };
 }
 

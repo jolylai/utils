@@ -9,7 +9,7 @@ module.exports = {
     smoothScroll: true,
     editLinkText: "Edit this on GitHub!",
     lastUpdated: "Last updated",
-    docsDir: "docs",
+    // docsDir: "docs",
     sidebarDepth: 2,
     nav: [
       {
@@ -22,7 +22,12 @@ module.exports = {
       {
         text: "函数 Function",
         collapsable: false,
-        children: [{ text: "after", link: "/function/after" }],
+        children: [
+          { text: "after", link: "/function/after" },
+          { text: "before", link: "/function/before" },
+          { text: "bind", link: "/function/bind" },
+          { text: "bindKey", link: "/function/bindKey" },
+        ],
       },
     ],
   },

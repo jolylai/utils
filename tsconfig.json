@@ -4,9 +4,12 @@
     "moduleResolution": "node",
     "module": "ES6",
     "strict": true,
-    "declaration": true,
+    "declaration": false,
     "noUnusedLocals": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "removeComments": true,
+    "rootDir": "src",
+    "outDir": "lib"
   },
   "include": ["src/**/*" , "test/**/*" ],
   "exclude": ["node_modules", "docs/**/*"]
