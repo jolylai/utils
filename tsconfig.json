@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "moduleResolution": "node",
+    "module": "ES6",
+    "strict": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "esModuleInterop": true
+  },
+  "include": ["src/**/*" ],
+  "exclude": ["node_modules", "docs/**/*"]
+}
