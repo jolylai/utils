@@ -22,11 +22,11 @@ obj.step();
 console.log(obj.x, obj.y); // 5,7
 ```
 
-<<< lib/bind.js
-
-## bind
+## 实现
 
 bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
+
+<<< lib/bind.js
 
 ## Function.prototype.bind
 
@@ -55,4 +55,24 @@ let user = {
 user.say(); // Hello, Jake!
 setTimeout(user.say, 100); // Hello, undefined!
 setTimeout(user.say.bind(user), 1000); // Hello, Jake!
+```
+
+## prototype
+
+```js
+let _ = require("lodash");
+
+let obj = {
+  0: "hi",
+  1: "how",
+  2: "are",
+  3: "you",
+  4: "doing",
+  5: "today",
+  length: 6,
+};
+
+obj.slice = _.bind(Array.prototype.slice, obj);
+
+console.log(obj.slice(1, 4)); // [ 'how', 'are', 'you' ]
 ```
