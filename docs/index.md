@@ -18,6 +18,8 @@ footer: MIT Licensed | Copyright © 2021-present
 
 ## Function
 
+闭包中 this 的指向
+
 ## Collection
 
 # Reference
