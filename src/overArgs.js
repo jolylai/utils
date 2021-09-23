@@ -1,7 +1,7 @@
 /**
  *  创建一个函数，调用func时参数为相对应的transforms的返回值。
- * @param Function func 要包裹的函数
- * @param {Function []} transforms 转换参数的函数
+ * @param {Function} func 要包裹的函数
+ * @param {Function[]} [transforms] 转换参数的函数
  * @returns 新函数
  */
 function overArgs(func, transforms = []) {

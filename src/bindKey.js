@@ -1,4 +1,4 @@
-function bindKey(object: { [key: string]: any }, key: string) {
+function bindKey(object, key) {
   const func = object[key];
 
   if (typeof func !== "function") {

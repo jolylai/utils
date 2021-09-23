@@ -1,13 +1,12 @@
-function curry(func: (...all: any[]) => any, arity?: number) {
+function curry(func, arity) {
   const { length } = func;
 
-  let args: any[] = [];
+  let args = [];
 
-  return function curried(...partial: any[]) {
+  return function curried(...partial) {
     args.push(...partial);
 
     if (args.length >= length) {
-      // @ts-ignore
       const result = func.apply(this, args);
       args = [];
 
