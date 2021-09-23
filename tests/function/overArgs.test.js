@@ -1,4 +1,4 @@
-import overArgs from "../src/overArgs";
+import overArgs from "../../src/overArgs";
 
 describe("overArgs", () => {
   const double = (n) => n * 2;

@@ -1,4 +1,4 @@
-import bind from "../src/bind";
+import bind from "../../src/bind";
 
 describe("bind", () => {
   test("should bind work", () => {

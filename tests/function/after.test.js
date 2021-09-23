@@ -1,4 +1,4 @@
-import after from "../src/after";
+import after from "../../src/after";
 
 describe("after", () => {
   test("should call after 2", () => {

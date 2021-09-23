@@ -1,4 +1,4 @@
-import defer from "../src/defer";
+import defer from "../../src/defer";
 
 describe("defer", () => {
   beforeEach(() => {

@@ -1,4 +1,4 @@
-import memoize from "../src/memoize";
+import memoize from "../../src/memoize";
 
 describe("memoize", () => {
   test("should memoize the result", () => {

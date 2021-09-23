@@ -1,4 +1,4 @@
-import before from "../src/before";
+import before from "../../src/before";
 
 describe("before", () => {
   test("should before work", () => {

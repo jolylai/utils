@@ -1,4 +1,4 @@
-import once from "../src/once";
+import once from "../../src/once";
 
 describe("once", () => {
   test("should once work", () => {

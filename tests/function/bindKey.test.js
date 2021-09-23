@@ -1,4 +1,4 @@
-import bindKey from "../src/bindKey";
+import bindKey from "../../src/bindKey";
 
 describe("bindKey", () => {
   test("should binKey work", () => {

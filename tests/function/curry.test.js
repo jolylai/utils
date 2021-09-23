@@ -1,8 +1,8 @@
-import curry from "../src/curry";
+import curry from "../../src/curry";
 
 describe("curry", () => {
   test("should curry", () => {
-    const abc = (a: number, b: number, c: number) => {
+    const abc = (a, b, c) => {
       return [a, b, c];
     };
 
