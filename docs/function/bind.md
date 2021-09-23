@@ -76,3 +76,7 @@ obj.slice = _.bind(Array.prototype.slice, obj);
 
 console.log(obj.slice(1, 4)); // [ 'how', 'are', 'you' ]
 ```
+
+#### Reference
+
+- [lodash_bind](https://dustinpfister.github.io/2018/10/15/lodash_bind/)
