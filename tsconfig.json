@@ -6,11 +6,12 @@
     "strict": true,
     "declaration": false,
     "noUnusedLocals": true,
+    "allowJs": true,
     "esModuleInterop": true,
     "removeComments": true,
     "rootDir": "src",
     "outDir": "lib"
   },
-  "include": ["src/**/*" , "test/**/*" ],
-  "exclude": ["node_modules", "docs/**/*"]
+  "include": ["src/**/*" , "test/**/*", "typings.d.ts" ],
+  "exclude": ["node_modules", "docs/**/*"],
 }

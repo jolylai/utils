@@ -27,6 +27,7 @@ module.exports = {
           { text: "before", link: "/function/before" },
           { text: "bind", link: "/function/bind" },
           { text: "bindKey", link: "/function/bindKey" },
+          { text: "memoize", link: "/function/memoize" },
         ],
       },
     ],
