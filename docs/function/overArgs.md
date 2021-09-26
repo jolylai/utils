@@ -46,4 +46,4 @@ function overArgs(func, transforms = []) {
 
 最终实现
 
-<<< src/overArgs.js
+<<< src/function/overArgs.js

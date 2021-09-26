@@ -12,4 +12,4 @@ initialize();
 
 ## 实现
 
-<<< src/once.js
+<<< src/function/once.js

@@ -20,6 +20,19 @@ module.exports = {
     ],
     sidebar: [
       {
+        text: "集合 Collection",
+        collapsable: false,
+        children: [
+          { text: "前言", link: "/collection/index" },
+          { text: "forEach", link: "/collection/forEach" },
+          // { text: "bind", link: "/collection/bind" },
+          // { text: "bindKey", link: "/collection/bindKey" },
+          // { text: "memoize", link: "/collection/memoize" },
+          // { text: "once", link: "/collection/once" },
+          // { text: "overArgs", link: "/collection/overArgs" },
+        ],
+      },
+      {
         text: "函数 Function",
         collapsable: false,
         children: [
