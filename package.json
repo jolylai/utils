@@ -1,26 +1,70 @@
 {
-  "name": "notebook-js",
-  "version": "1.0.0",
+  "name": "@xtep/utils",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.1.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "vitepress dev docs",
-    "build": "tsc",
-    "docs:build": "vitepress build docs",
-    "test": "jest"
+  "author": "Jolylai <jolylai163@163.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/jolylai",
+  "homepage": "https://github.com/jolylai/utils#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolylai/utils.git"
   },
+  "bugs": "https://github.com/jolylai/utils/issues",
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./dist/index.d.ts"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "dev": "unbuild --stub",
+    "lint": "eslint .",
+    "prepublishOnly": "nr build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "@babel/preset-typescript": "^7.15.0",
-    "@types/jest": "^27.0.2",
-    "@types/lodash": "^4.14.173",
-    "jest": "^24.3.1",
-    "ts-node": "^10.2.1",
-    "typescript": "^4.4.3",
-    "vitepress": "^0.19.1"
+    "@antfu/eslint-config": "^0.38.4",
+    "@types/node": "^18.15.11",
+    "bumpp": "^9.1.0",
+    "eslint": "^8.37.0",
+    "esno": "^0.16.3",
+    "lint-staged": "^13.2.0",
+    "pnpm": "^8.1.1",
+    "rimraf": "^4.4.1",
+    "simple-git-hooks": "^2.8.1",
+    "typescript": "^5.0.3",
+    "unbuild": "^1.2.0",
+    "vite": "^4.2.1",
+    "vitest": "^0.29.8"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
