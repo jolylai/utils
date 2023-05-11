@@ -16,12 +16,6 @@ features:
 footer: MIT Licensed | Copyright © 2021-present
 ---
 
-## Function
-
-闭包中 this 的指向
-
-## Collection
-
 # Reference
 
 - [You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)

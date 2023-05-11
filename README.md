@@ -1,4 +1,4 @@
-# Notebook JS
+# @xtep/utils
 
 # Quite Start
 
@@ -17,16 +17,16 @@ yarn run start
 
 ## Array
 
-- [_.flatten](./src/flatten.js)
+- [\_.flatten](./src/flatten.js)
 
 ## Object
 
-- [_.get](./src/get.js)
-- [_.pick](./src/pick.js)
-- [_.pickBy](./src/pickBy.js)
-- [_.keys](./src/keys.js)
-- [_.values](./src/values.js)
-- [_.toPairs](.src/toPairs.js)
+- [\_.get](./src/get.js)
+- [\_.pick](./src/pick.js)
+- [\_.pickBy](./src/pickBy.js)
+- [\_.keys](./src/keys.js)
+- [\_.values](./src/values.js)
+- [\_.toPairs](.src/toPairs.js)
 
 ## Inspired by
 
