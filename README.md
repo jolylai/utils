@@ -1,7 +1,5 @@
 # @xtep/utils
 
-# Quite Start
-
 ```bash
 # clone
 git clone https://github.com/jolylai/notebook-js.git
@@ -30,4 +28,5 @@ yarn run start
 
 ## Inspired by
 
+- [@antfu/utils](https://github.com/antfu/utils)
 - [You-Dont-Need-Lodash-Underscore](https://github.com/you-dont-need/You-Dont-Need-Lodash-Underscore)
