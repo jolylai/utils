@@ -44,15 +44,15 @@
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:preview": "vitepress preview docs",
-    "lint": "eslint .",
     "prepublishOnly": "nr build",
     "release": "bumpp && npm publish",
     "start": "esno src/index.ts",
     "test": "vitest",
-    "typecheck": "tsc --noEmit"
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.43.1",
+    "@antfu/eslint-config": "1.0.0-beta.28",
     "@types/node": "^20.8.8",
     "bumpp": "^9.2.0",
     "eslint": "^8.52.0",
